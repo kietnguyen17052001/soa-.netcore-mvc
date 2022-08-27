@@ -1,0 +1,52 @@
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\appsettings.Development.json
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\appsettings.json
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.staticwebassets.runtime.json
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.exe
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.deps.json
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.runtimeconfig.json
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.dll
+D:\Console Emulator\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.pdb
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.csproj.AssemblyReference.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfoInputs.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfo.cs
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.csproj.CoreCompileInputs.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.MvcApplicationPartsAssemblyInfo.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.RazorAssemblyInfo.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.RazorAssemblyInfo.cs
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\staticwebassets.build.json
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\staticwebassets.development.json
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\bundle\ProductManager.styles.css
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\projectbundle\ProductManager.bundle.scp.css
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.dll
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\refint\ProductManager.dll
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.pdb
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.genruntimeconfig.cache
+D:\Console Emulator\dot-net\ProductManager\obj\Debug\net6.0\ref\ProductManager.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\appsettings.Development.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\appsettings.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.staticwebassets.runtime.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.exe
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.deps.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.runtimeconfig.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\ProductManager.pdb
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.csproj.AssemblyReference.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfoInputs.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfo.cs
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.csproj.CoreCompileInputs.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.MvcApplicationPartsAssemblyInfo.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.RazorAssemblyInfo.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.RazorAssemblyInfo.cs
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\staticwebassets.build.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\staticwebassets.development.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\bundle\ProductManager.styles.css
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\scopedcss\projectbundle\ProductManager.bundle.scp.css
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\refint\ProductManager.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.pdb
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.genruntimeconfig.cache
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ref\ProductManager.dll

@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Product Page</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div>
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Options</th>
+            </thead>
+            <tbody>
+                @foreach (var product in new Product().products)
+                {
+                    <tr>
+                        <td>@product.productId</td>
+                        <td>@product.productName</td>
+                        <td>@product.price</td>
+                        <td>@product.quantity</td>
+                        <td>x</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
