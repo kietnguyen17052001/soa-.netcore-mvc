@@ -1,5 +1,7 @@
+@model List<Product>
 @{
     ViewData["Title"] = "Product Page";
+    var products = Model;
 }
 
 <div class="text-center">
@@ -12,17 +14,20 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Options</th>
+                <th>Slug</th>
+                <th>Category Id</th>
             </thead>
             <tbody>
-                @foreach (var product in new Product().products)
+                @foreach (var product in products)
                 {
                     <tr>
                         <td>@product.productId</td>
                         <td>@product.productName</td>
                         <td>@product.price</td>
                         <td>@product.quantity</td>
-                        <td>x</td>
+                        <td><a href="https://github.com/kietnguyen17052001">@product.slug</a></td>
+                        <td>@product.categoryId</td>
+
                     </tr>
                 }
             </tbody>
