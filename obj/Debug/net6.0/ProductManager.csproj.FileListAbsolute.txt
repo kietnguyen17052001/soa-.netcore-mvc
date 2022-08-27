@@ -50,3 +50,13 @@ D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\refint\P
 D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.pdb
 D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.genruntimeconfig.cache
 D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ref\ProductManager.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\MySqlConnector.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\obj\Debug\net6.0\ProductManager.csproj.CopyComplete
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\appsettings.Production.json
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\kiet.nguyen-dang\programming\dot-net\ProductManager\bin\Debug\net6.0\Humanizer.dll

@@ -1,7 +1,24 @@
+using Microsoft.EntityFrameworkCore;
+using ProductManager.Models;
+using ProductManager.Services;
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var connectionString = builder.Configuration.GetConnectionString("Default");
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+services.AddControllersWithViews();
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
+services.AddDbContext<DataContext>(
+    dbContextOptions => dbContextOptions
+                .UseMySql(connectionString, serverVersion)
+                // The following three options help with debugging, but should
+                // be changed or removed for production.
+                .LogTo(Console.WriteLine, LogLevel.Information)
+                .EnableSensitiveDataLogging()
+                .EnableDetailedErrors()
+);
+
+services.AddTransient<IProductService, ProductService>();
 
 var app = builder.Build();
 
