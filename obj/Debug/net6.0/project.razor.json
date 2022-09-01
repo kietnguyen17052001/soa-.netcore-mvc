@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\kiet.nguyen-dang\\programming\\dot-net\\ProductManager\\Views\\Product\\Create.cshtml",
+      "TargetPath": "Views\\Product\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\kiet.nguyen-dang\\programming\\dot-net\\ProductManager\\Views\\Product\\Index.cshtml",
       "TargetPath": "Views\\Product\\Index.cshtml",
       "FileKind": "mvc"
@@ -16335,6 +16340,11 @@
     {
       "FilePath": "d:\\kiet.nguyen-dang\\programming\\dot-net\\ProductManager\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\kiet.nguyen-dang\\programming\\dot-net\\ProductManager\\Views\\Product\\Update.cshtml",
+      "TargetPath": "Views\\Product\\Update.cshtml",
       "FileKind": "mvc"
     }
   ],

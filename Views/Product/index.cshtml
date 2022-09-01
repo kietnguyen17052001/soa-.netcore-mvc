@@ -1,12 +1,17 @@
 @model List<Product>
 @{
-    ViewData["Title"] = "Product Page";
+    ViewData["Title"] = "View product Page";
     var products = Model;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome Product Page</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form action="/Product/Index" method="post">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Product's name" aria-label="Product's name" aria-describedby="basic-addon2" name="productName">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </div>
+    </form>
     <div>
         <table class="table">
             <thead>
@@ -16,6 +21,9 @@
                 <th>Quantity</th>
                 <th>Slug</th>
                 <th>Category Id</th>
+                <th>
+                    <a href="/Product/Create" class="btn btn-primary">Create</a>
+                </th>
             </thead>
             <tbody>
                 @foreach (var product in products)
@@ -27,7 +35,10 @@
                         <td>@product.quantity</td>
                         <td><a href="https://github.com/kietnguyen17052001">@product.slug</a></td>
                         <td>@product.categoryId</td>
-
+                        <td>
+                            <a href="/Product/Update?productId=@product.productId" class="btn btn-success">Update</a>
+                            <a href="/Product/Delete?productId=@product.productId" class="btn btn-danger">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
