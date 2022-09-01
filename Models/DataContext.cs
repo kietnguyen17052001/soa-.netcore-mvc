@@ -6,6 +6,7 @@ namespace ProductManager.Models
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<Product> products { get; set; }
+        public DbSet<Category> categories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>()
