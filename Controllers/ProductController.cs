@@ -11,17 +11,13 @@ public class ProductController : Controller
         this.service = service;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string sort, string productName, int categoryId)
     {
-        var products = service.getAllProduct();
+        var products = service.getAllProduct(sort, productName, categoryId);
+        ViewBag.categories = service.getAllCategory();
         return View(products);
     }
-    [HttpPost]
-    public IActionResult Index(string productName)
-    {
-        var products = service.searchProduct(productName);
-        return View(products);
-    }
+
     public IActionResult Save(Product product)
     {
         if (service.getProductById(product.productId) == null)

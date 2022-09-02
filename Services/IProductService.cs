@@ -4,12 +4,11 @@ namespace ProductManager.Services
 {
     public interface IProductService
     {
-        List<Product> getAllProduct();
-        List<Product> searchProduct(string search);
+        List<Product>? getAllProduct(string sort, string productName, int categoryId);
         Product? getProductById(int productId);
         void insertProduct(Product product);
         void updateProduct(Product product);
         void deleteProduct(int productId);
-        List<Category> getAllCategory();
+        List<Category>? getAllCategory();
     }
 }

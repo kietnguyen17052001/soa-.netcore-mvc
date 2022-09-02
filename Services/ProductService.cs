@@ -11,35 +11,60 @@ namespace ProductManager.Services
 
         public void deleteProduct(int productId)
         {
-            var product = context.products.FirstOrDefault(p => p.productId == productId);
+            var product = context.products?.FirstOrDefault(p => p.productId == productId);
             if (product == null) { throw new KeyNotFoundException("Not found key " + productId); }
-            context.products.Remove(product);
+            context.products?.Remove(product);
             context.SaveChanges();
         }
 
-        public List<Category> getAllCategory()
+        public List<Category>? getAllCategory()
         {
-            return context.categories.ToList();
+            return context.categories?.ToList();
         }
 
-        public List<Product> getAllProduct()
+        public List<Product>? getAllProduct(string sort, string productName, int categoryId)
         {
-            return context.products.ToList();
-        }
-
-        public List<Product> searchProduct(string search)
-        {
-            return context.products.ToList().Where(p => p.productName.Contains(search)).ToList();
+            if (sort == null && productName == null && categoryId == 0)
+            {
+                return context.products?.ToList();
+            }
+            else if (sort == null && productName != null && categoryId == 0)
+            {
+                return context.products?.Where(p => p.productName.Contains(productName)).ToList();
+            }
+            else if (sort != null && productName == null && categoryId == 0)
+            {
+                return (sort.Equals("asc")) ? context.products?.OrderBy(p => p.productName).ToList() : context.products?.OrderByDescending(p => p.productName).ToList();
+            }
+            else if (sort != null && productName != null && categoryId == 0)
+            {
+                var products = context.products?.Where(p => p.productName.Contains(productName));
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+            }
+            else if (sort != null && productName == null && categoryId != 0)
+            {
+                var products = context.products?.Where(p => p.categoryId == categoryId);
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+            }
+            else if (sort == null && productName != null && categoryId != 0)
+            {
+                return context.products?.Where(p => p.productName.Contains(productName) && p.categoryId == categoryId).ToList();
+            }
+            else
+            {
+                var products = context.products?.Where(p => p.productName.Contains(productName) && p.categoryId == categoryId);
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+            }
         }
 
         public Product? getProductById(int productId)
         {
-            return context.products.FirstOrDefault(p => p.productId == productId);
+            return context.products?.FirstOrDefault(p => p.productId == productId);
         }
 
         public void insertProduct(Product product)
         {
-            context.products.Add(product);
+            context.products?.Add(product);
             context.SaveChanges();
         }
 
@@ -48,7 +73,7 @@ namespace ProductManager.Services
             var _product = getProductById(product.productId);
             if (_product == null) { throw new KeyNotFoundException("Not found key " + product.productId); }
             _product = map(_product, product);
-            context.products.Update(_product);
+            context.products?.Update(_product);
             context.SaveChanges();
         }
 
@@ -61,5 +86,6 @@ namespace ProductManager.Services
             product.categoryId = requestProduct.categoryId;
             return product;
         }
+
     }
 }

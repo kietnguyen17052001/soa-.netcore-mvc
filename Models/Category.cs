@@ -12,8 +12,8 @@ namespace ProductManager.Models
         [Key]
         public int categoryId { get; set; }
         [MaxLength(256)]
-        public string categoryName { get; set; }
-        public List<Product> products { get; set; }
+        public string? categoryName { get; set; }
+        public List<Product>? products { get; set; }
 
     }
 }

@@ -2,13 +2,27 @@
 @{
     ViewData["Title"] = "View product Page";
     var products = Model;
+    var categories = ViewBag.categories;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome Product Page</h1>
     <form action="/Product/Index" method="post">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Product's name" aria-label="Product's name" aria-describedby="basic-addon2" name="productName">
+            <input type="text" class="form-control" placeholder="Product's name" aria-label="Product's name"
+                aria-describedby="basic-addon2" name="productName">
+            <select id="inputState" class="form-control" name="sort">
+                <option selected>Sort</option>
+                <option value="asc">Asc</option>
+                <option value="desc">Desc</option>
+            </select>
+            <select id="inputState" class="form-control" name="categoryId">
+                <option selected>Category</option>
+                @foreach (var category in categories)
+                {
+                    <option value="@category.categoryId">@category.categoryName</option>
+                }
+            </select>
             <button class="btn btn-outline-secondary" type="submit">Search</button>
         </div>
     </form>
@@ -20,7 +34,7 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Slug</th>
-                <th>Category Id</th>
+                <th>Category</th>
                 <th>
                     <a href="/Product/Create" class="btn btn-primary">Create</a>
                 </th>
