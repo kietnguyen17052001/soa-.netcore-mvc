@@ -1,4 +1,5 @@
 using ProductManager.Models;
+using Microsoft.EntityFrameworkCore;
 namespace ProductManager.Services
 {
     public class ProductService : IProductService
@@ -26,34 +27,34 @@ namespace ProductManager.Services
         {
             if (sort == null && productName == null && categoryId == 0)
             {
-                return context.products?.ToList();
+                return context.products?.Include(p => p.category).ToList();
             }
             else if (sort == null && productName != null && categoryId == 0)
             {
-                return context.products?.Where(p => p.productName.Contains(productName)).ToList();
+                return context.products?.Where(p => p.productName.Contains(productName)).Include(p => p.category).ToList();
             }
             else if (sort != null && productName == null && categoryId == 0)
             {
-                return (sort.Equals("asc")) ? context.products?.OrderBy(p => p.productName).ToList() : context.products?.OrderByDescending(p => p.productName).ToList();
+                return (sort.Equals("asc")) ? context.products?.OrderBy(p => p.productName).Include(p => p.category).ToList() : context.products?.OrderByDescending(p => p.productName).Include(p => p.category).ToList();
             }
             else if (sort != null && productName != null && categoryId == 0)
             {
                 var products = context.products?.Where(p => p.productName.Contains(productName));
-                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).Include(p => p.category).ToList() : products?.OrderByDescending(p => p.productName).Include(p => p.category).ToList();
             }
             else if (sort != null && productName == null && categoryId != 0)
             {
                 var products = context.products?.Where(p => p.categoryId == categoryId);
-                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).Include(p => p.category).ToList() : products?.OrderByDescending(p => p.productName).Include(p => p.category).ToList();
             }
             else if (sort == null && productName != null && categoryId != 0)
             {
-                return context.products?.Where(p => p.productName.Contains(productName) && p.categoryId == categoryId).ToList();
+                return context.products?.Where(p => p.productName.Contains(productName) && p.categoryId == categoryId).Include(p => p.category).ToList();
             }
             else
             {
                 var products = context.products?.Where(p => p.productName.Contains(productName) && p.categoryId == categoryId);
-                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).ToList() : products?.OrderByDescending(p => p.productName).ToList();
+                return (sort.Equals("asc")) ? products?.OrderBy(p => p.productName).Include(p => p.category).ToList() : products?.OrderByDescending(p => p.productName).Include(p => p.category).ToList();
             }
         }
 
